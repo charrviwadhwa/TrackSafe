@@ -1,4 +1,10 @@
-body{
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
     padding-left: 100px;
     padding-top: 80px;
     padding-right: 50px;
@@ -56,22 +62,43 @@ ul {
     text-decoration: underline;
 }
 
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
 footer {
-    background-color: #333; /* Dark background color */
-    color: white;           /* White text */
-    text-align: center;     /* Center the text */
-    padding-top: 10px;       /* Padding on top and bottom */
-    position: relative;     /* Allow the footer to be positioned */
-    bottom: 0;              /* Stick it to the bottom of the page */
-    width: 100%;           /* Full width */
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2980b9;
+    color: white;
+    position: relative;
 }
-
-.footer-container {
-    max-width: 1200px;      /* Max width for the footer content */
-    margin: 0 auto;         /* Center the footer content */
-}
-
-footer p {
-    margin: 0;              /* Remove default margin from paragraph */
-}
-

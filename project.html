@@ -52,10 +52,12 @@
     <div class="container">
       <h1 id="safe">SAFETY TIPS</h1><br>
 
+      <div class="scroll-container">
+
       <div class="tips-grid">
         <div class="tip">
           <img src="belt.jpg" id="image">
-          <h3><a href="https://injurytreatment.net/2022/09/23/ten-tips-for-car-accident-avoidance/#:~:text=Wearing%20a%20seatbelt%20is%20one%20of%20the,passenger%2C%20make%20sure%20to%20always%20buckle%20up">Wear a seat belt</a></h3>
+          <h3><a href="seatbelt.html">Wear a seat belt</a></h3>
           <p><i>Always wear a seat belt: Seat belts reduce the risk of death by 45%</i></p>
          
         </div>
@@ -449,53 +451,55 @@
   </div>
 </footer> -->
 <footer>
-  <div class="row">
-      <div class="col">
-      </div>
-      <div class="col">
-      </div>
-      <div class="col">
-        <h3>
-            Links 
-            <div class="bottom_line">
-                <span></span>
-            </div>
-        </h3>
-        <ul>
-          <div class="col">
-            <li><a href="#home">Home</a></li></div>
-            <div class="col">
-            <li><a href="#about-us">About us</a></li></div>
-            <div class="col">
-            <li><a href="#tips">Safety tips</a></li></div>
-            <div class="col">
-            <li><a href="#register">Register</a></li></div>
-        </ul>
+  <div class="footer-container">
+    <div class="footer-column office-section">
+      <h3>Tracksafe</h3>
+      
+      <p>Your safety our priority</p>
+      <p class="footer_email">tracksafe4@gmail.com</p>
+      <h4>+1 -8493080402
+        
+      
+      </h4>
     </div>
-    
-      <div class="col">
-          <h3>Contact Us <div class="bottom_line"><span></span></div></h3>
-          <form>
-              <ion-icon class="icon" name="mail"></ion-icon>
-              <input type="email" placeholder="Enter your email" required>
-              <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
-          </form>
-          <div class="social_icons">
-              <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
-              <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
-              <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
-              <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
-          </div>
+    <div class="footer-column links-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About us </a></li>
+        <li><a href="#tips">Safety Tips</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+    <div class="footer-column newsletter-section">
+      <h3>Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
       </div>
+    </div>
   </div>
   <hr>
-  <p class="copyright">Cosas Learning Ⓒ 2022 - All Rights Reserved</p>
-</footer> 
+  <p class="copyright">Tracksafe Ⓒ 2024 - All Rights Reserved</p>
+  <a href="#" id="back-to-top">Back to Top</a>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
 <script src="script.js"></script>
 <a href="#" id="back-to-top">Back to Top</a>
 
 <script>
-  // Show/hide back-to-top button
+  
   window.onscroll = function() {
       const button = document.getElementById('back-to-top');
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -506,7 +510,7 @@
   };
 </script>
 <style>
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -523,7 +527,7 @@ body.dark-mode {
     color: #e0e0e0;
 }
 
-/* Navbar */
+
 nav {
             background-color: rgb(5, 1, 8);
             color: white;
@@ -853,196 +857,173 @@ ul li a:hover {
     text-align: center;
    
 }
-footer{
-        width: 100%;
-        background: linear-gradient(to right,#00093c, #2d0b00);
-        color: #fff;
-        padding: 50px 0 30px;
-        font-size: 13px;
-        line-height: 20px;
-    }
-    .row{
-        width: 85%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    .col{
-        flex-basis: 25%;
-        padding: 10px;
-    }
-    .col:nth-child(2), .col:nth-child(3){
-        flex-basis: 15%;
-    }
-    .footer_logo{
-        width: 80px;
-        position: relative;
-        top: -23px;
-        left: -20px;
-    }
-    .footer_about{
-        position: relative;
-        top: -23px;
-    }
-    .col h3{
-        width: fit-content;
-        margin-bottom: 40px;
-        position: relative;
-        display: block;
-    }
-    .footer_email{
-        width: fit-content;
-        border-bottom: 1px solid #f66335;
-        margin: 20px 0;
-        display: block;
-    
-    }
-    .col ul li{
-        list-style: none;
-        margin-bottom: 12px;
-        display: block;
-       
-    }
-    .col ul li a{
-        text-decoration: none;
-        color: #fff;
-        display: block;
-        padding: 8px 0;
-       
-    }
-    .col form{
-        padding-bottom: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #f66335;
-        margin-bottom: 50px;
-    }
-    .col form .icon{
-        font-size: 18px;
-        margin-right: 10px;
-    }
-    .col form input{
-        width: 100%;
-        background: transparent;
-        color: #ccc;
-        border: 0;
-        outline: none;
-    }
-    .col form button{
-        background: transparent;
-        border: 0;
-        outline: none;
-        cursor: pointer;
-    }
-    .col form button .icon_right{
-        font-size: 16px;
-        color: #ccc;
-    }
-    .col .social_icons .social_icon{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 40px;
-        font-size: 20px;
-        color: #fff;
-        background: #f66335;
-        margin-right: 15px;
-        padding: 5px;
-        cursor: pointer;
-    }
-    hr{
-        width: 90%;
-        border: 0;
-        border-bottom: 1px solid #ccc;
-        margin: 20px auto;
-    }
-    footer .copyright{
-        text-align: center;
-    }
-    .bottom_line{
-        width: 100%;
-        height: 5px;
-        background: #767676;
-        border-radius: 3px;
-        position: absolute;
-        top: 25px;
-        left: 0;
-        overflow: hidden;
-    }
-    .bottom_line span{
-        width: 15px;
-        height: 100%;
-        background: #f66335;
-        border-radius: 3px;
-        position: absolute;
-        top: 0;
-        left: 10px;
-        animation: moveline 2s linear infinite;
-    }
-    @keyframes moveline{
-        0%{
-            left:-20px;
-        }
-        100%{
-            left:100%;
-        }
-    }
-    
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Footer Styles */
+/* Footer Styles */
+/* Footer Styles */
+/* Footer Styles */
+footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  padding: 40px 0;
+  font-family: 'Open Sans', sans-serif;
 }
-@keyframes slideInUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap; /* Responsive layout */
 }
-@keyframes slideInDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+.footer-column {
+  flex-basis: 30%;
+  margin-bottom: 20px;
 }
-@keyframes zoomIn {
-    from {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+
+.footer-column h3 {
+  color: #f66335;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
 }
-@keyframes bounceIn {
-    0% {
-        transform: scale(0.9);
-    }
-    70% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+
+.footer-column h3::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: #f66335;
+  display: block;
+  margin-top: 5px;
 }
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #f66335;
+}
+
+.office-section p,
+.newsletter-section p {
+  margin-bottom: 10px;
+}
+
+.newsletter-section form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b2b3b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.newsletter-section input {
+  width: 75%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f66335;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f66335;
+}
+
+/* Bottom Section */
+hr {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 20px 0;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #888;
+}
+
+#back-to-top {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #f66335;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-column {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-section form {
+    flex-direction: column;
+  }
+
+  .newsletter-section input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-section button {
+    width: 100%;
+  }
+}
+
 
 
 
