@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <link rel="icon" type="image/x-icon" href="TRACKSAFE.png">
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\HP\AppData\Local\Temp\435d2806-377c-40dc-be1d-b602404655a9_favicon_io.zip.5a9\favicon-16x16.png"> -->
@@ -24,11 +25,11 @@
         <img src="TRACKSAFE.png" alt="TrackSafe Logo">
     </div>
     <button class="menu-toggle">Menu</button>
-    <ul>
-        <li class="item"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-        <li class="item"><a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
-        <li class="item"><a href="#tips"><i class="fas fa-shield-alt"></i> Safety Tips</a></li>
-        <li class="item"><a href="register.html"><i class="fas fa-user-plus"></i> Register </a></li>
+    <ul class="nav-links">
+        <li class="item"><a class="btn" href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li class="item"><a class="btn" href="#about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li class="item"><a class="btn" href="#tips"><i class="fas fa-shield-alt"></i> Safety Tips</a></li>
+        <li class="item"><a class="btn" href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
     </ul>
 </nav>
 
@@ -75,7 +76,12 @@
     </div>
   </section>
 
+  <h1 id="gps">Track your location</h1>
   
+<div class="button-container">
+  <button class="styled-button" onclick="location.href='gps3.html'">Your Location</button><br>
+
+</div>
   <!-- <section id="Register">
     <h1 id="heading">REGISTER</h1>
   <div class="formbold-main-wrapper" >
@@ -529,31 +535,54 @@ body.dark-mode {
 
 
 nav {
-            background-color: rgb(5, 1, 8);
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            animation: slideInDown 0.5s ease-in-out;
-        }
+    background-color: rgb(5, 1, 8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: cente;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        #logo img {
-            height: 50px;
-        }
+#logo img {
+    height: 50px;
+}
+.nav-links {
+    display: flex; /* Use flexbox for nav items */
+    margin-left: auto; /* Push nav items to the right */
+    padding:10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
-        .menu-toggle {
-            display: none;
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-        }
+.item {
+    margin: 0 15px;
+}
 
+.btn {
+    background-color: transparent; /* Button background */
+    border: 2px solid white; /* Button border */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+
+    border-radius: 25px; 
+  }
+
+.btn:hover {
+    background-color: white; /* Change background on hover */
+    color: rgb(5, 1, 8); /* Change text color on hover */
+}
+
+    
         ul {
             list-style-type: none;
             padding: 0;
@@ -661,7 +690,30 @@ ul li a:hover {
         display: block;
     }
 }
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;    /* Vertical centering */
+    height: 100px;         /* Full viewport height for vertical centering */
+}
+.styled-button {
+            padding: 10px 20px;
+            background-color: #000005;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
+        .styled-button:hover {
+            background-color: #0000008f; /* Darker on hover */
+        }
+  #gps{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    text-align: center;
+  }
 /* Home Section 
 #home {
     background-image: url('C:\Users\HP\Documents\safety.jpg');
@@ -1144,7 +1196,7 @@ footer .copyright {
 } */
 
 </style>
-
+<script src="script1.js"></script>
 <script>
   const toggleButton = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('nav ul');
