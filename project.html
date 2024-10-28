@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <link rel="icon" type="image/x-icon" href="TRACKSAFE.png">
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\HP\AppData\Local\Temp\435d2806-377c-40dc-be1d-b602404655a9_favicon_io.zip.5a9\favicon-16x16.png"> -->
@@ -24,11 +25,11 @@
         <img src="TRACKSAFE.png" alt="TrackSafe Logo">
     </div>
     <button class="menu-toggle">Menu</button>
-    <ul>
-        <li class="item"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-        <li class="item"><a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
-        <li class="item"><a href="#tips"><i class="fas fa-shield-alt"></i> Safety Tips</a></li>
-        <li class="item"><a href="#register"><i class="fas fa-user-plus"></i> Register</a></li>
+    <ul class="nav-links">
+        <li class="item"><a class="btn" href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li class="item"><a class="btn" href="#about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li class="item"><a class="btn" href="#tips"><i class="fas fa-shield-alt"></i> Safety Tips</a></li>
+        <li class="item"><a class="btn" href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
     </ul>
 </nav>
 
@@ -52,10 +53,12 @@
     <div class="container">
       <h1 id="safe">SAFETY TIPS</h1><br>
 
+      <div class="scroll-container">
+
       <div class="tips-grid">
         <div class="tip">
           <img src="belt.jpg" id="image">
-          <h3><a href="https://injurytreatment.net/2022/09/23/ten-tips-for-car-accident-avoidance/#:~:text=Wearing%20a%20seatbelt%20is%20one%20of%20the,passenger%2C%20make%20sure%20to%20always%20buckle%20up">Wear a seat belt</a></h3>
+          <h3><a href="seatbelt.html">Wear a seat belt</a></h3>
           <p><i>Always wear a seat belt: Seat belts reduce the risk of death by 45%</i></p>
          
         </div>
@@ -73,8 +76,13 @@
     </div>
   </section>
 
+  <h1 id="gps">Track your location</h1>
   
-  <section id="Register">
+<div class="button-container">
+  <button class="styled-button" onclick="location.href='gps3.html'">Your Location</button><br>
+
+</div>
+  <!-- <section id="Register">
     <h1 id="heading">REGISTER</h1>
   <div class="formbold-main-wrapper" >
    
@@ -427,6 +435,7 @@
       width: 45%;
     }
   </style>
+   -->
   <!-- <footer>
     <div class="footer-container">
       <p>&copy; 2024 Tracksafe. All Rights Reserved.</p>
@@ -448,53 +457,55 @@
   </div>
 </footer> -->
 <footer>
-  <div class="row">
-      <div class="col">
-      </div>
-      <div class="col">
-      </div>
-      <div class="col">
-        <h3>
-            Links 
-            <div class="bottom_line">
-                <span></span>
-            </div>
-        </h3>
-        <ul>
-          <div class="col">
-            <li><a href="#home">Home</a></li></div>
-            <div class="col">
-            <li><a href="#about-us">About us</a></li></div>
-            <div class="col">
-            <li><a href="#tips">Safety tips</a></li></div>
-            <div class="col">
-            <li><a href="#register">Register</a></li></div>
-        </ul>
+  <div class="footer-container">
+    <div class="footer-column office-section">
+      <h3>Tracksafe</h3>
+      
+      <p>Your safety our priority</p>
+      <p class="footer_email">tracksafe4@gmail.com</p>
+      <h4>+1 -8493080402
+        
+      
+      </h4>
     </div>
-    
-      <div class="col">
-          <h3>Contact Us <div class="bottom_line"><span></span></div></h3>
-          <form>
-              <ion-icon class="icon" name="mail"></ion-icon>
-              <input type="email" placeholder="Enter your email" required>
-              <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
-          </form>
-          <div class="social_icons">
-              <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
-              <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
-              <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
-              <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
-          </div>
+    <div class="footer-column links-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About us </a></li>
+        <li><a href="#tips">Safety Tips</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+    <div class="footer-column newsletter-section">
+      <h3>Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
       </div>
+    </div>
   </div>
   <hr>
-  <p class="copyright">Cosas Learning Ⓒ 2022 - All Rights Reserved</p>
-</footer> 
+  <p class="copyright">Tracksafe Ⓒ 2024 - All Rights Reserved</p>
+  <a href="#" id="back-to-top">Back to Top</a>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
 <script src="script.js"></script>
 <a href="#" id="back-to-top">Back to Top</a>
 
 <script>
-  // Show/hide back-to-top button
+  
   window.onscroll = function() {
       const button = document.getElementById('back-to-top');
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -505,7 +516,7 @@
   };
 </script>
 <style>
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -522,33 +533,56 @@ body.dark-mode {
     color: #e0e0e0;
 }
 
-/* Navbar */
+
 nav {
-            background-color: rgb(5, 1, 8);
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            animation: slideInDown 0.5s ease-in-out;
-        }
+    background-color: rgb(5, 1, 8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: cente;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        #logo img {
-            height: 50px;
-        }
+#logo img {
+    height: 50px;
+}
+.nav-links {
+    display: flex; /* Use flexbox for nav items */
+    margin-left: auto; /* Push nav items to the right */
+    padding:10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
-        .menu-toggle {
-            display: none;
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-        }
+.item {
+    margin: 0 15px;
+}
 
+.btn {
+    background-color: transparent; /* Button background */
+    border: 2px solid white; /* Button border */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+
+    border-radius: 25px; 
+  }
+
+.btn:hover {
+    background-color: white; /* Change background on hover */
+    color: rgb(5, 1, 8); /* Change text color on hover */
+}
+
+    
         ul {
             list-style-type: none;
             padding: 0;
@@ -656,7 +690,30 @@ ul li a:hover {
         display: block;
     }
 }
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;    /* Vertical centering */
+    height: 100px;         /* Full viewport height for vertical centering */
+}
+.styled-button {
+            padding: 10px 20px;
+            background-color: #000005;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
+        .styled-button:hover {
+            background-color: #0000008f; /* Darker on hover */
+        }
+  #gps{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    text-align: center;
+  }
 /* Home Section 
 #home {
     background-image: url('C:\Users\HP\Documents\safety.jpg');
@@ -852,196 +909,173 @@ ul li a:hover {
     text-align: center;
    
 }
-footer{
-        width: 100%;
-        background: linear-gradient(to right,#00093c, #2d0b00);
-        color: #fff;
-        padding: 50px 0 30px;
-        font-size: 13px;
-        line-height: 20px;
-    }
-    .row{
-        width: 85%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    .col{
-        flex-basis: 25%;
-        padding: 10px;
-    }
-    .col:nth-child(2), .col:nth-child(3){
-        flex-basis: 15%;
-    }
-    .footer_logo{
-        width: 80px;
-        position: relative;
-        top: -23px;
-        left: -20px;
-    }
-    .footer_about{
-        position: relative;
-        top: -23px;
-    }
-    .col h3{
-        width: fit-content;
-        margin-bottom: 40px;
-        position: relative;
-        display: block;
-    }
-    .footer_email{
-        width: fit-content;
-        border-bottom: 1px solid #f66335;
-        margin: 20px 0;
-        display: block;
-    
-    }
-    .col ul li{
-        list-style: none;
-        margin-bottom: 12px;
-        display: block;
-       
-    }
-    .col ul li a{
-        text-decoration: none;
-        color: #fff;
-        display: block;
-        padding: 8px 0;
-       
-    }
-    .col form{
-        padding-bottom: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #f66335;
-        margin-bottom: 50px;
-    }
-    .col form .icon{
-        font-size: 18px;
-        margin-right: 10px;
-    }
-    .col form input{
-        width: 100%;
-        background: transparent;
-        color: #ccc;
-        border: 0;
-        outline: none;
-    }
-    .col form button{
-        background: transparent;
-        border: 0;
-        outline: none;
-        cursor: pointer;
-    }
-    .col form button .icon_right{
-        font-size: 16px;
-        color: #ccc;
-    }
-    .col .social_icons .social_icon{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 40px;
-        font-size: 20px;
-        color: #fff;
-        background: #f66335;
-        margin-right: 15px;
-        padding: 5px;
-        cursor: pointer;
-    }
-    hr{
-        width: 90%;
-        border: 0;
-        border-bottom: 1px solid #ccc;
-        margin: 20px auto;
-    }
-    footer .copyright{
-        text-align: center;
-    }
-    .bottom_line{
-        width: 100%;
-        height: 5px;
-        background: #767676;
-        border-radius: 3px;
-        position: absolute;
-        top: 25px;
-        left: 0;
-        overflow: hidden;
-    }
-    .bottom_line span{
-        width: 15px;
-        height: 100%;
-        background: #f66335;
-        border-radius: 3px;
-        position: absolute;
-        top: 0;
-        left: 10px;
-        animation: moveline 2s linear infinite;
-    }
-    @keyframes moveline{
-        0%{
-            left:-20px;
-        }
-        100%{
-            left:100%;
-        }
-    }
-    
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Footer Styles */
+/* Footer Styles */
+/* Footer Styles */
+/* Footer Styles */
+footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  padding: 40px 0;
+  font-family: 'Open Sans', sans-serif;
 }
-@keyframes slideInUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap; /* Responsive layout */
 }
-@keyframes slideInDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+
+.footer-column {
+  flex-basis: 30%;
+  margin-bottom: 20px;
 }
-@keyframes zoomIn {
-    from {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+
+.footer-column h3 {
+  color: #f66335;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
 }
-@keyframes bounceIn {
-    0% {
-        transform: scale(0.9);
-    }
-    70% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+
+.footer-column h3::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: #f66335;
+  display: block;
+  margin-top: 5px;
 }
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #f66335;
+}
+
+.office-section p,
+.newsletter-section p {
+  margin-bottom: 10px;
+}
+
+.newsletter-section form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b2b3b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.newsletter-section input {
+  width: 75%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f66335;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f66335;
+}
+
+/* Bottom Section */
+hr {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 20px 0;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #888;
+}
+
+#back-to-top {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #f66335;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-column {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-section form {
+    flex-direction: column;
+  }
+
+  .newsletter-section input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-section button {
+    width: 100%;
+  }
+}
+
 
 
 
@@ -1162,7 +1196,7 @@ footer{
 } */
 
 </style>
-
+<script src="script1.js"></script>
 <script>
   const toggleButton = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('nav ul');
